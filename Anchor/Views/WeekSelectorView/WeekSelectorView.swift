@@ -19,6 +19,8 @@ struct WeekSelectorView: View {
             header
             daysRow
         }
+        .font(.title2)
+        .fontWeight(.medium)
         .padding()
     }
     
@@ -33,8 +35,8 @@ struct WeekSelectorView: View {
             Spacer()
             
             Text(viewModel.weekRangeString)
-                .font(.subheadline)
-                .fontWeight(.semibold)
+                .font(.body)
+                .fontWeight(.medium)
             
             Spacer()
             
@@ -51,7 +53,7 @@ struct WeekSelectorView: View {
     // MARK: - Days Row
     
     private var daysRow: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 10) {
             ForEach(viewModel.weekDates, id: \.self) { date in
                 let isSelected = viewModel.isSelected(date)
                 
@@ -60,7 +62,7 @@ struct WeekSelectorView: View {
                 } label: {
                     Text(viewModel.shortWeekdayString(for: date))
                         .font(.subheadline)
-                        .fontWeight(.medium)
+                        .fontWeight(.bold)
                         .padding(.vertical)
                         .padding(.horizontal)
                         .background(
