@@ -11,7 +11,7 @@ struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
     
     var body: some View {
-        NeoPopNavBar(viewModel: viewModel.navBar)
+        WeekSelectorView()
     }
 }
 
