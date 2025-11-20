@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5983FFBC2ECF7B050040C225 /* NeoPop in Frameworks */ = {isa = PBXBuildFile; productRef = 5983FFBB2ECF7B050040C225 /* NeoPop */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5983FFAC2ECF7AE10040C225 /* Anchor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anchor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5983FFBC2ECF7B050040C225 /* NeoPop in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Anchor;
 			packageProductDependencies = (
+				5983FFBB2ECF7B050040C225 /* NeoPop */,
 			);
 			productName = Anchor;
 			productReference = 5983FFAC2ECF7AE10040C225 /* Anchor.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 5983FFA32ECF7AE10040C225;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5983FFBA2ECF7B050040C225 /* XCRemoteSwiftPackageReference "neopop-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5983FFAD2ECF7AE10040C225 /* Products */;
 			projectDirPath = "";
@@ -332,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5983FFBA2ECF7B050040C225 /* XCRemoteSwiftPackageReference "neopop-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CRED-CLUB/neopop-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5983FFBB2ECF7B050040C225 /* NeoPop */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5983FFBA2ECF7B050040C225 /* XCRemoteSwiftPackageReference "neopop-ios" */;
+			productName = NeoPop;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5983FFA42ECF7AE10040C225 /* Project object */;
 }
