@@ -18,7 +18,11 @@ struct NeoPopContainer: View {
             floating: true
         ) {
             VStack(alignment: .leading, spacing: 20) {
-            NeoPopStatsCard()
+                ScrollView{
+                    NeoPopStatsCard()
+                    NeoPopStatsCard()
+                    NeoPopStatsCard()
+                }
             }
             .padding(10)
         }
